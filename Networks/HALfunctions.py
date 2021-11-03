@@ -8,6 +8,7 @@ pd.options.display.max_colwidth = 100
 import seaborn as sns
 from matplotlib import pyplot as plt
 
+#On écrit une fonction (donc réutilisable) pour récupérer tous les éléments, page par page
 def get_all_elements(request_core,page_size=1000):
     df_complet=pd.DataFrame()
     
@@ -18,7 +19,7 @@ def get_all_elements(request_core,page_size=1000):
     #Cette boucle incrémente le curseur de début, par pas de 1000, jusqu'à atteindre le dernier élément
     for i in range(0,nb_reponses,page_size):
         #On récupére le résultat, en rajoutant des options à la requete de base
-        response =requests.get(requete+"&wt=csv&sort=docid asc&start="+str(i)+"&rows="+str(page_size))
+        response =requests.get(request_core+"&wt=csv&sort=docid asc&start="+str(i)+"&rows="+str(page_size))
         df_temp =pd.read_csv(io.StringIO(response.text),sep=",")
 
         #On ajoute les réponses les plus récentes à celles que l'on a déjà
@@ -26,6 +27,8 @@ def get_all_elements(request_core,page_size=1000):
         print("Éléments récupérés : ",len(df_complet))
     
     return df_complet #la fonction renvoie le tableau complet
+
+
 
 def co_occurence_network(request,column,threshold=1):
     collab_list=[]
