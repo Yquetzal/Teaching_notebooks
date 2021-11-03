@@ -1,3 +1,13 @@
+import requests
+import pandas as pd
+import io
+import collections
+from itertools import combinations
+import networkx as nx
+pd.options.display.max_colwidth = 100
+import seaborn as sns
+from matplotlib import pyplot as plt
+
 def get_all_elements(request_core,page_size=1000):
     df_complet=pd.DataFrame()
     
