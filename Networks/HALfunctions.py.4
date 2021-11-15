@@ -130,11 +130,11 @@ def bi_partite_network(request,article_column,other_column,threshold=1,article_a
 
     for index,row in request.iterrows(): #pour tous les articles
         #print(row)
-        nodes=str(row[other_column]).replace("\\,","_").split(",") 
+        nodes=row[other_column].replace("\\,","_").split(",") #on crée une liste des noms d'auteurs
         article_id=index
-        if len(nodes)<=5:
+        if len(nodes)<=5: #s'il y a entre 2 et 5 elements (pour éviter une explostion de liens)
             
-            for i,node in enumerate(nodes):
+            for i,node in enumerate(nodes):#pour chaque auteur
                 authorship.append((node,index))
                 #node_list.append(node)
                 
@@ -145,44 +145,6 @@ def bi_partite_network(request,article_column,other_column,threshold=1,article_a
         attributes = {at:row[at] for at in article_attributes}
         attributes["type"]="article"
         node_list.append((index,attributes))
-    #En utilisant networkx, nous créons un objet graphe
-    g = nx.Graph()
-    g.add_nodes_from(node_list)
-    g.add_edges_from(authorship)
-    return g
-
-def bi_partite_network_generic(request,column1,column2,threshold_max_in_col=10,column1_attributes=[],column2_attributes=[]):
-    authorship=[]
-    node_list=[] 
-    column1_attributes+=[column1]
-    column2_attributes+=[column2]
-
-
-
-
-    for index,row in request.iterrows(): #pour tous les articles
-        #print(row)
-        nodes1=str(row[column1]).replace("\\,","_").split(",") 
-        nodes2=str(row[column2]).replace("\\,","_").split(",") 
-
-
-        article_id=index
-        if len(nodes1)<=threshold_max_in_col and len(nodes2)<=threshold_max_in_col:
-            
-            for i,node1 in enumerate(nodes1):
-                for j,node2 in enumerate(nodes2):
-                    authorship.append((node1,node2))
-                    #node_list.append(node)
-                
-                    if not node2 in node_list:
-                        attributes={}
-                        attributes["type"]="col2"
-                        node_list.append((node2,attributes))
-                
-                if not node1 in node_list:
-                    attributes={}
-                    attributes["type"]="col1"
-                    node_list.append((node1,attributes))
     #En utilisant networkx, nous créons un objet graphe
     g = nx.Graph()
     g.add_nodes_from(node_list)

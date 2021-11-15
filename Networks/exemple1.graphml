@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="edge" attr.name="occurences" attr.type="int" />
+  <key id="d0" for="node" attr.name="occurences" attr.type="int" />
+  <graph edgedefault="undirected">
+    <node id="Julien Jacques">
+      <data key="d0">1</data>
+    </node>
+    <node id="Margot Selosse">
+      <data key="d0">1</data>
+    </node>
+    <node id="Christophe Biernacki">
+      <data key="d0">1</data>
+    </node>
+    <node id="Marcelo Alves Favaro">
+      <data key="d0">1</data>
+    </node>
+    <node id="Paul-Alexis Pavard">
+      <data key="d0">1</data>
+    </node>
+    <node id="Clément Camp">
+      <data key="d0">1</data>
+    </node>
+    <node id="Julien Petit">
+      <data key="d0">1</data>
+    </node>
+    <node id="Fano Ramparany">
+      <data key="d0">1</data>
+    </node>
+    <node id="Iago Felipe Trentin">
+      <data key="d0">1</data>
+    </node>
+    <node id="Olivier Boissier">
+      <data key="d0">1</data>
+    </node>
+    <node id="Anne Farruggia">
+      <data key="d0">1</data>
+    </node>
+    <node id="Mollys Daunas">
+      <data key="d0">1</data>
+    </node>
+    <node id="Gilles Brunschwig">
+      <data key="d0">1</data>
+    </node>
+    <node id="Alizée Chouteau">
+      <data key="d0">1</data>
+    </node>
+    <node id="Catherine Disenhaus">
+      <data key="d0">1</data>
+    </node>
+    <node id="S. Mishra">
+      <data key="d0">2</data>
+    </node>
+    <node id="Nipun Sharma">
+      <data key="d0">1</data>
+    </node>
+    <node id="Antoine Gréa">
+      <data key="d0">1</data>
+    </node>
+    <node id="Khouloud Achouri">
+      <data key="d0">1</data>
+    </node>
+    <node id="Zied Abbes">
+      <data key="d0">1</data>
+    </node>
+    <node id="Sweta Gahlot">
+      <data key="d0">1</data>
+    </node>
+    <node id="Bhagyesh Purohit">
+      <data key="d0">1</data>
+    </node>
+    <node id="Shashank Mishra">
+      <data key="d0">1</data>
+    </node>
+    <node id="Erwann Jeanneau">
+      <data key="d0">1</data>
+    </node>
+    <edge source="Julien Jacques" target="Margot Selosse">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Julien Jacques" target="Christophe Biernacki">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Margot Selosse" target="Christophe Biernacki">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Paul-Alexis Pavard" target="Clément Camp">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Paul-Alexis Pavard" target="Julien Petit">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Clément Camp" target="Julien Petit">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Fano Ramparany" target="Iago Felipe Trentin">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Fano Ramparany" target="Olivier Boissier">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Iago Felipe Trentin" target="Olivier Boissier">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Anne Farruggia" target="Mollys Daunas">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Gilles Brunschwig" target="Alizée Chouteau">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Gilles Brunschwig" target="Catherine Disenhaus">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Alizée Chouteau" target="Catherine Disenhaus">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Sweta Gahlot" target="Bhagyesh Purohit">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Sweta Gahlot" target="Shashank Mishra">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Sweta Gahlot" target="Erwann Jeanneau">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Bhagyesh Purohit" target="Shashank Mishra">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Bhagyesh Purohit" target="Erwann Jeanneau">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Shashank Mishra" target="Erwann Jeanneau">
+      <data key="d1">1</data>
+    </edge>
+  </graph>
+</graphml>
