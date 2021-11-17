@@ -3,7 +3,28 @@
   <key id="d1" for="edge" attr.name="occurrences" attr.type="int" />
   <key id="d0" for="node" attr.name="occurrences" attr.type="int" />
   <graph edgedefault="undirected">
-    <node id="Lauriane Lecoq">
+    <node id="Jeanne Dury">
+      <data key="d0">1</data>
+    </node>
+    <node id="Dominic Pérennou">
+      <data key="d0">1</data>
+    </node>
+    <node id="Clément Ankaoua">
+      <data key="d0">1</data>
+    </node>
+    <node id="Patrice Rougier">
+      <data key="d0">1</data>
+    </node>
+    <node id="Thierry Paillard">
+      <data key="d0">1</data>
+    </node>
+    <node id="Thibaud Coquard">
+      <data key="d0">1</data>
+    </node>
+    <node id="Corentin Barthod">
+      <data key="d0">1</data>
+    </node>
+    <node id="Matthias Harbers">
       <data key="d0">1</data>
     </node>
     <node id="Laura Cole">
@@ -12,40 +33,166 @@
     <node id="Anja Böckmann">
       <data key="d0">1</data>
     </node>
-    <node id="Matthias Harbers">
+    <node id="Lauriane Lecoq">
       <data key="d0">1</data>
     </node>
     <node id="Marie-Laure Fogeron">
       <data key="d0">1</data>
     </node>
-    <edge source="Lauriane Lecoq" target="Laura Cole">
+    <node id="Zhen Xu">
+      <data key="d0">1</data>
+    </node>
+    <node id="Magali Richard">
+      <data key="d0">1</data>
+    </node>
+    <node id="Sergio Escalera">
+      <data key="d0">1</data>
+    </node>
+    <node id="Huan Zhao">
+      <data key="d0">1</data>
+    </node>
+    <node id="Wei-Wei Tu">
+      <data key="d0">1</data>
+    </node>
+    <node id="Isabelle Guyon">
+      <data key="d0">1</data>
+    </node>
+    <edge source="Jeanne Dury" target="Dominic Pérennou">
       <data key="d1">1</data>
     </edge>
-    <edge source="Lauriane Lecoq" target="Anja Böckmann">
+    <edge source="Jeanne Dury" target="Clément Ankaoua">
       <data key="d1">1</data>
     </edge>
-    <edge source="Lauriane Lecoq" target="Matthias Harbers">
+    <edge source="Jeanne Dury" target="Patrice Rougier">
       <data key="d1">1</data>
     </edge>
-    <edge source="Lauriane Lecoq" target="Marie-Laure Fogeron">
+    <edge source="Jeanne Dury" target="Thierry Paillard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Jeanne Dury" target="Thibaud Coquard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Jeanne Dury" target="Corentin Barthod">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Dominic Pérennou" target="Clément Ankaoua">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Dominic Pérennou" target="Patrice Rougier">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Dominic Pérennou" target="Thierry Paillard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Dominic Pérennou" target="Thibaud Coquard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Dominic Pérennou" target="Corentin Barthod">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Clément Ankaoua" target="Patrice Rougier">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Clément Ankaoua" target="Thierry Paillard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Clément Ankaoua" target="Thibaud Coquard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Clément Ankaoua" target="Corentin Barthod">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Patrice Rougier" target="Thierry Paillard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Patrice Rougier" target="Thibaud Coquard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Patrice Rougier" target="Corentin Barthod">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Thierry Paillard" target="Thibaud Coquard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Thierry Paillard" target="Corentin Barthod">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Thibaud Coquard" target="Corentin Barthod">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Matthias Harbers" target="Laura Cole">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Matthias Harbers" target="Anja Böckmann">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Matthias Harbers" target="Lauriane Lecoq">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Matthias Harbers" target="Marie-Laure Fogeron">
       <data key="d1">1</data>
     </edge>
     <edge source="Laura Cole" target="Anja Böckmann">
       <data key="d1">1</data>
     </edge>
-    <edge source="Laura Cole" target="Matthias Harbers">
+    <edge source="Laura Cole" target="Lauriane Lecoq">
       <data key="d1">1</data>
     </edge>
     <edge source="Laura Cole" target="Marie-Laure Fogeron">
       <data key="d1">1</data>
     </edge>
-    <edge source="Anja Böckmann" target="Matthias Harbers">
+    <edge source="Anja Böckmann" target="Lauriane Lecoq">
       <data key="d1">1</data>
     </edge>
     <edge source="Anja Böckmann" target="Marie-Laure Fogeron">
       <data key="d1">1</data>
     </edge>
-    <edge source="Matthias Harbers" target="Marie-Laure Fogeron">
+    <edge source="Lauriane Lecoq" target="Marie-Laure Fogeron">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Zhen Xu" target="Magali Richard">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Zhen Xu" target="Sergio Escalera">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Zhen Xu" target="Huan Zhao">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Zhen Xu" target="Wei-Wei Tu">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Zhen Xu" target="Isabelle Guyon">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Magali Richard" target="Sergio Escalera">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Magali Richard" target="Huan Zhao">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Magali Richard" target="Wei-Wei Tu">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Magali Richard" target="Isabelle Guyon">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Sergio Escalera" target="Huan Zhao">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Sergio Escalera" target="Wei-Wei Tu">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Sergio Escalera" target="Isabelle Guyon">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Huan Zhao" target="Wei-Wei Tu">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Huan Zhao" target="Isabelle Guyon">
+      <data key="d1">1</data>
+    </edge>
+    <edge source="Wei-Wei Tu" target="Isabelle Guyon">
       <data key="d1">1</data>
     </edge>
   </graph>
