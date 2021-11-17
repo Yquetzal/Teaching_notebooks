@@ -7,7 +7,6 @@ import networkx as nx
 pd.options.display.max_colwidth = 100
 import seaborn as sns
 from matplotlib import pyplot as plt
-import hashlib
 
 #On écrit une fonction (donc réutilisable) pour récupérer tous les éléments, page par page
 def get_all_elements(request_core,page_size=1000):
@@ -31,7 +30,7 @@ def get_all_elements(request_core,page_size=1000):
 
 
 
-def co_occurence_network(request,column,threshold=1,threshold_max_in_col=10):
+def co_occurence_network(request,column,threshold=1):
     collab_list=[]
     node_list=[] #To make the network more insteresting, we also collect the number of articles by author:
 
@@ -41,7 +40,7 @@ def co_occurence_network(request,column,threshold=1,threshold_max_in_col=10):
     for collab in list(request[column]): #pour tous les articles
         nodes=str(collab).replace("\\,","_").split(",") #on crée une liste des noms d'auteurs
         nodes=set(nodes)
-        if len(nodes)<=threshold_max_in_col: #s'il y a entre 2 et 5 elements (pour éviter une explostion de liens)
+        if len(nodes)<=5: #s'il y a entre 2 et 5 elements (pour éviter une explostion de liens)
             
             for node in nodes:#remember we have seen that node
                 node_list.append(node)
@@ -73,7 +72,7 @@ def co_occurence_network(request,column,threshold=1,threshold_max_in_col=10):
     return g
 
 
-def co_occurence_network_laboratory(request,column,threshold=1,threshold_max_in_col=10):
+def co_occurence_network_laboratory(request,column,threshold=1):
     collab_list=[]
     node_list=[]
     
@@ -101,7 +100,7 @@ def co_occurence_network_laboratory(request,column,threshold=1,threshold_max_in_
             for node in nodes:
                 node_list.append(node)
 
-            if len(nodes)<=threshold_max_in_col: 
+            if len(nodes)<=10: 
                 for node1,node2 in combinations(nodes,2): 
                     collab_list.append(frozenset((node1,node2))) 
 
@@ -123,7 +122,7 @@ def co_occurence_network_laboratory(request,column,threshold=1,threshold_max_in_
     g.add_edges_from(edges)
     return g
 
-def bi_partite_network(request,article_column,other_column,threshold=1,threshold_max_in_col=10,article_attributes=[],other_attributes=[]):
+def bi_partite_network(request,article_column,other_column,threshold=1,article_attributes=[],other_attributes=[]):
     authorship=[]
     node_list=[] 
     article_attributes+=[article_column]
@@ -133,7 +132,7 @@ def bi_partite_network(request,article_column,other_column,threshold=1,threshold
         #print(row)
         nodes=str(row[other_column]).replace("\\,","_").split(",") 
         article_id=index
-        if len(nodes)<=threshold_max_in_col:
+        if len(nodes)<=5:
             
             for i,node in enumerate(nodes):
                 authorship.append((node,index))
@@ -176,30 +175,18 @@ def bi_partite_network_generic(request,column1,column2,threshold_max_in_col=10,c
             
             for i,node1 in enumerate(nodes1):
                 for j,node2 in enumerate(nodes2):
-                    node1ID=node1
-                    node2ID=node2
-                    if len(node1)>20:
-                        hash_object = hashlib.sha1(node1.encode())
-                        node1ID = hash_object.hexdigest()
-                    if len(node2)>20:
-                        hash_object = hashlib.sha1(node2.encode())
-                        node2ID = hash_object.hexdigest()
-                    authorship.append((node1ID,node2ID))
+                    authorship.append((node1,node2))
                     #node_list.append(node)
                 
-                    if not node2ID in node_list:
+                    if not node2 in node_list:
                         attributes={}
                         attributes["type"]="col2"
-                        attributes["label"]=node2
-
-
-                        node_list.append((node2ID,attributes))
+                        node_list.append((node2,attributes))
                 
-                if not node1ID in node_list:
+                if not node1 in node_list:
                     attributes={}
                     attributes["type"]="col1"
-                    attributes["label"]=node1
-                    node_list.append((node1ID,attributes))
+                    node_list.append((node1,attributes))
     #En utilisant networkx, nous créons un objet graphe
     counts=dict(collections.Counter(authorship))
     counts = [[u,v,w] for (u,v),w in counts.items()]

@@ -1,61 +1,47 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key id="d1" for="edge" attr.name="occurrences" attr.type="int" />
+  <key id="d2" for="edge" attr.name="occurrences" attr.type="int" />
+  <key id="d1" for="node" attr.name="label" attr.type="string" />
   <key id="d0" for="node" attr.name="type" attr.type="string" />
   <graph edgedefault="undirected">
-    <node id="nan">
+    <node id="25d4205e78375ce9d523c9bce54659ca16bdb94d">
       <data key="d0">col2</data>
+      <data key="d1">Cell-free protein expression</data>
     </node>
-    <node id="chim.cata">
+    <node id="Wheat germ">
+      <data key="d0">col2</data>
+      <data key="d1">Wheat germ</data>
+    </node>
+    <node id="Structural biology">
+      <data key="d0">col2</data>
+      <data key="d1">Structural biology</data>
+    </node>
+    <node id="Labeling">
+      <data key="d0">col2</data>
+      <data key="d1">Labeling</data>
+    </node>
+    <node id="NMR">
+      <data key="d0">col2</data>
+      <data key="d1">NMR</data>
+    </node>
+    <node id="sdv.bbm">
       <data key="d0">col1</data>
+      <data key="d1">sdv.bbm</data>
     </node>
-    <node id="sde.es">
-      <data key="d0">col1</data>
-    </node>
-    <node id="Nanocomposites">
-      <data key="d0">col2</data>
-    </node>
-    <node id="phys.phys">
-      <data key="d0">col1</data>
-    </node>
-    <node id="Abstraction">
-      <data key="d0">col2</data>
-    </node>
-    <node id="info.info-ai">
-      <data key="d0">col1</data>
-    </node>
-    <node id="Performance">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Sprint">
-      <data key="d0">col2</data>
-    </node>
-    <node id="PAP">
-      <data key="d0">col2</data>
-    </node>
-    <node id="sdv.mhep">
-      <data key="d0">col1</data>
-    </node>
-    <edge source="nan" target="chim.cata">
-      <data key="d1">3</data>
+    <edge source="25d4205e78375ce9d523c9bce54659ca16bdb94d" target="sdv.bbm">
+      <data key="d2">2</data>
     </edge>
-    <edge source="nan" target="sde.es">
-      <data key="d1">3</data>
+    <edge source="Wheat germ" target="sdv.bbm">
+      <data key="d2">2</data>
     </edge>
-    <edge source="Nanocomposites" target="phys.phys">
-      <data key="d1">2</data>
+    <edge source="Structural biology" target="sdv.bbm">
+      <data key="d2">2</data>
     </edge>
-    <edge source="Abstraction" target="info.info-ai">
-      <data key="d1">2</data>
+    <edge source="Labeling" target="sdv.bbm">
+      <data key="d2">2</data>
     </edge>
-    <edge source="Performance" target="sdv.mhep">
-      <data key="d1">2</data>
-    </edge>
-    <edge source="Sprint" target="sdv.mhep">
-      <data key="d1">2</data>
-    </edge>
-    <edge source="PAP" target="sdv.mhep">
-      <data key="d1">2</data>
+    <edge source="NMR" target="sdv.bbm">
+      <data key="d2">2</data>
     </edge>
   </graph>
 </graphml>
