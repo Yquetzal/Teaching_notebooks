@@ -55,7 +55,7 @@ def co_occurence_network(request,column,threshold=1):
     occurences=node_list
     for n,occ in dict(collections.Counter(occurences)).items(): #collections.Counter count occurences by item
         if occ>threshold: #we filter out singleton to keep important actors
-            nodes.append((n,{"occurrences":occ})) #we store the result in a format convenient for networkx
+            nodes.append((n,{"occurences":occ})) #we store the result in a format convenient for networkx
     
     #We count how many times each link appears:
     edges=[]
@@ -63,7 +63,7 @@ def co_occurence_network(request,column,threshold=1):
     for n,occ in dict(collections.Counter(occurences)).items(): #collections.Counter count occurences by item
         if occ>threshold: #we filter out singleton to keep important relations
             n1,n2=n
-            edges.append((n1,n2,{"occurrences":occ})) #we store the result in a format convenient for networkx
+            edges.append((n1,n2,{"occurences":occ})) #we store the result in a format convenient for networkx
             
     #En utilisant networkx, nous créons un objet graphe
     g = nx.Graph()
@@ -108,14 +108,14 @@ def co_occurence_network_laboratory(request,column,threshold=1):
     occurences=node_list
     for n,occ in dict(collections.Counter(occurences)).items(): 
         if occ>threshold: 
-            nodes.append((n,{"occurrences":occ})) 
+            nodes.append((n,{"occurences":occ})) 
     
     edges=[]
     occurences=collab_list
     for n,occ in dict(collections.Counter(occurences)).items(): 
         if occ>threshold:
             n1,n2=n
-            edges.append((n1,n2,{"occurrences":occ}))
+            edges.append((n1,n2,{"occurences":occ}))
             
     g = nx.Graph()
     g.add_nodes_from(nodes)
@@ -145,14 +145,10 @@ def bi_partite_network(request,article_column,other_column,threshold=1,article_a
         attributes = {at:row[at] for at in article_attributes}
         attributes["type"]="article"
         node_list.append((index,attributes))
-        
     #En utilisant networkx, nous créons un objet graphe
-    counts=dict(collections.Counter(authorship))
-    counts = [[u,v,w] for (u,v),w in counts.items()]
-    print(counts)
     g = nx.Graph()
     g.add_nodes_from(node_list)
-    g.add_weighted_edges_from(counts,"occurrences")
+    g.add_edges_from(authorship)
     return g
 
 def bi_partite_network_generic(request,column1,column2,threshold_max_in_col=10,column1_attributes=[],column2_attributes=[]):
@@ -188,15 +184,10 @@ def bi_partite_network_generic(request,column1,column2,threshold_max_in_col=10,c
                     attributes["type"]="col1"
                     node_list.append((node1,attributes))
     #En utilisant networkx, nous créons un objet graphe
-    counts=dict(collections.Counter(authorship))
-    counts = [[u,v,w] for (u,v),w in counts.items()]
     g = nx.Graph()
     g.add_nodes_from(node_list)
-    g.add_weighted_edges_from(counts,"occurrences")
+    g.add_edges_from(authorship)
     return g
-
-
-
 
 
 def column_most_common(df,previous_name,new_name):

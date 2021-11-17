@@ -1,90 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="edge" attr.name="occurrences" attr.type="int" />
   <key id="d0" for="node" attr.name="type" attr.type="string" />
   <graph edgedefault="undirected">
-    <node id="Latent Block Model">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Textual data">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Interpretability">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Interprétabilité">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Donnés textuelles">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Modèle des blocs latents">
-      <data key="d0">col2</data>
-    </node>
-    <node id="math.math-st">
-      <data key="d0">col1</data>
-    </node>
-    <node id="Rhodium">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Functional NHC ligand">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Organometallic complex">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Yaw distortion angle">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Carbene coordination">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Steric effects">
-      <data key="d0">col2</data>
-    </node>
-    <node id="chim.coor">
-      <data key="d0">col1</data>
-    </node>
-    <node id="Intelligence">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Intelligence artificielle">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Système multi-agent">
-      <data key="d0">col2</data>
-    </node>
-    <node id="info.info-mo">
-      <data key="d0">col1</data>
-    </node>
-    <node id="info.info-ma">
-      <data key="d0">col1</data>
-    </node>
     <node id="nan">
       <data key="d0">col2</data>
-    </node>
-    <node id="sdv.sa">
-      <data key="d0">col1</data>
-    </node>
-    <node id="Connaissance de l'élevage">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Enquête">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Enseignement">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Lycée">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Objectivité">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Information">
-      <data key="d0">col2</data>
-    </node>
-    <node id="shs.edu">
-      <data key="d0">col1</data>
     </node>
     <node id="chim.cata">
       <data key="d0">col1</data>
@@ -92,92 +12,17 @@
     <node id="sde.es">
       <data key="d0">col1</data>
     </node>
-    <node id="Self-organization of metallic nanoparticles">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Plasmon systems">
-      <data key="d0">col2</data>
-    </node>
     <node id="Nanocomposites">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Mesoporous Titanium Oxide Nanocomposites">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Femtosecond laser">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Auto-organisation de nanoparticules métalliques">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Systèmes plasmoniques">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Nanocomposites d'Oxyde de titane mésoporeux">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Laser femtoseconde">
       <data key="d0">col2</data>
     </node>
     <node id="phys.phys">
       <data key="d0">col1</data>
     </node>
-    <node id="Nickel catalysis">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Photocatalysis">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Acylation">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Radical relay">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Hydrogen-atom transfer">
-      <data key="d0">col2</data>
-    </node>
-    <node id="C–N bond activation">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Alkyl ketones">
-      <data key="d0">col2</data>
-    </node>
-    <node id="chim.orga">
-      <data key="d0">col1</data>
-    </node>
-    <node id="Artificial intelligence">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Planning">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Knowledge representation">
-      <data key="d0">col2</data>
-    </node>
     <node id="Abstraction">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Intent recogniton">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Plannification">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Représentation des connaissances">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Reconnaissance d'intention">
       <data key="d0">col2</data>
     </node>
     <node id="info.info-ai">
       <data key="d0">col1</data>
-    </node>
-    <node id="Swimming">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Warm-Up">
-      <data key="d0">col2</data>
     </node>
     <node id="Performance">
       <data key="d0">col2</data>
@@ -188,86 +33,29 @@
     <node id="PAP">
       <data key="d0">col2</data>
     </node>
-    <node id="Natation">
-      <data key="d0">col2</data>
-    </node>
-    <node id="Echauffement">
-      <data key="d0">col2</data>
-    </node>
     <node id="sdv.mhep">
       <data key="d0">col1</data>
     </node>
-    <edge source="Latent Block Model" target="math.math-st" />
-    <edge source="Textual data" target="math.math-st" />
-    <edge source="Interpretability" target="math.math-st" />
-    <edge source="Interprétabilité" target="math.math-st" />
-    <edge source="Donnés textuelles" target="math.math-st" />
-    <edge source="Modèle des blocs latents" target="math.math-st" />
-    <edge source="Rhodium" target="chim.coor" />
-    <edge source="Functional NHC ligand" target="chim.coor" />
-    <edge source="Organometallic complex" target="chim.coor" />
-    <edge source="Yaw distortion angle" target="chim.coor" />
-    <edge source="Carbene coordination" target="chim.coor" />
-    <edge source="Steric effects" target="chim.coor" />
-    <edge source="Intelligence" target="info.info-mo" />
-    <edge source="Intelligence" target="info.info-ma" />
-    <edge source="Intelligence artificielle" target="info.info-mo" />
-    <edge source="Intelligence artificielle" target="info.info-ma" />
-    <edge source="Intelligence artificielle" target="info.info-ai" />
-    <edge source="Système multi-agent" target="info.info-mo" />
-    <edge source="Système multi-agent" target="info.info-ma" />
-    <edge source="nan" target="sdv.sa" />
-    <edge source="nan" target="chim.cata" />
-    <edge source="nan" target="sde.es" />
-    <edge source="sdv.sa" target="Connaissance de l'élevage" />
-    <edge source="sdv.sa" target="Enquête" />
-    <edge source="sdv.sa" target="Enseignement" />
-    <edge source="sdv.sa" target="Lycée" />
-    <edge source="sdv.sa" target="Objectivité" />
-    <edge source="sdv.sa" target="Information" />
-    <edge source="Connaissance de l'élevage" target="shs.edu" />
-    <edge source="Enquête" target="shs.edu" />
-    <edge source="Enseignement" target="shs.edu" />
-    <edge source="Lycée" target="shs.edu" />
-    <edge source="Objectivité" target="shs.edu" />
-    <edge source="Information" target="shs.edu" />
-    <edge source="chim.cata" target="Nickel catalysis" />
-    <edge source="chim.cata" target="Photocatalysis" />
-    <edge source="chim.cata" target="Acylation" />
-    <edge source="chim.cata" target="Radical relay" />
-    <edge source="chim.cata" target="Hydrogen-atom transfer" />
-    <edge source="chim.cata" target="C–N bond activation" />
-    <edge source="chim.cata" target="Alkyl ketones" />
-    <edge source="Self-organization of metallic nanoparticles" target="phys.phys" />
-    <edge source="Plasmon systems" target="phys.phys" />
-    <edge source="Nanocomposites" target="phys.phys" />
-    <edge source="Mesoporous Titanium Oxide Nanocomposites" target="phys.phys" />
-    <edge source="Femtosecond laser" target="phys.phys" />
-    <edge source="Auto-organisation de nanoparticules métalliques" target="phys.phys" />
-    <edge source="Systèmes plasmoniques" target="phys.phys" />
-    <edge source="Nanocomposites d'Oxyde de titane mésoporeux" target="phys.phys" />
-    <edge source="Laser femtoseconde" target="phys.phys" />
-    <edge source="Nickel catalysis" target="chim.orga" />
-    <edge source="Photocatalysis" target="chim.orga" />
-    <edge source="Acylation" target="chim.orga" />
-    <edge source="Radical relay" target="chim.orga" />
-    <edge source="Hydrogen-atom transfer" target="chim.orga" />
-    <edge source="C–N bond activation" target="chim.orga" />
-    <edge source="Alkyl ketones" target="chim.orga" />
-    <edge source="Artificial intelligence" target="info.info-ai" />
-    <edge source="Planning" target="info.info-ai" />
-    <edge source="Knowledge representation" target="info.info-ai" />
-    <edge source="Abstraction" target="info.info-ai" />
-    <edge source="Intent recogniton" target="info.info-ai" />
-    <edge source="Plannification" target="info.info-ai" />
-    <edge source="Représentation des connaissances" target="info.info-ai" />
-    <edge source="Reconnaissance d'intention" target="info.info-ai" />
-    <edge source="Swimming" target="sdv.mhep" />
-    <edge source="Warm-Up" target="sdv.mhep" />
-    <edge source="Performance" target="sdv.mhep" />
-    <edge source="Sprint" target="sdv.mhep" />
-    <edge source="PAP" target="sdv.mhep" />
-    <edge source="Natation" target="sdv.mhep" />
-    <edge source="Echauffement" target="sdv.mhep" />
+    <edge source="nan" target="chim.cata">
+      <data key="d1">3</data>
+    </edge>
+    <edge source="nan" target="sde.es">
+      <data key="d1">3</data>
+    </edge>
+    <edge source="Nanocomposites" target="phys.phys">
+      <data key="d1">2</data>
+    </edge>
+    <edge source="Abstraction" target="info.info-ai">
+      <data key="d1">2</data>
+    </edge>
+    <edge source="Performance" target="sdv.mhep">
+      <data key="d1">2</data>
+    </edge>
+    <edge source="Sprint" target="sdv.mhep">
+      <data key="d1">2</data>
+    </edge>
+    <edge source="PAP" target="sdv.mhep">
+      <data key="d1">2</data>
+    </edge>
   </graph>
 </graphml>
