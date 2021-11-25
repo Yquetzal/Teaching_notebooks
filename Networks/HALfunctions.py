@@ -31,20 +31,32 @@ def get_all_elements(request_core,page_size=1000):
 
 
 
-def co_occurence_network(request,column,threshold=1,threshold_max_in_col=10):
+def co_occurence_network(request,column,threshold=1,threshold_max_in_col=10,attribute=None):
+    """
+      request: a pandas dataframe
+      column: the column with the nodes
+      threashold: minimal number of co-occurences to be kept
+      threashold_max_in_col: to avoid explosion of edges
+      attribute: the column to use as node attribute (most frequent by node)
+    """
     collab_list=[]
-    node_list=[] #To make the network more insteresting, we also collect the number of articles by author:
+    node_list={} 
+    if attribute==None:
+      attribute=column
 
 
 
-
-    for collab in list(request[column]): #pour tous les articles
+    for i,row in request.iterrows(): #pour tous les articles
+        collab=row[column]
         nodes=str(collab).replace("\\,","_").split(",") #on crée une liste des noms d'auteurs
         nodes=set(nodes)
         if len(nodes)<=threshold_max_in_col: #s'il y a entre 2 et 5 elements (pour éviter une explostion de liens)
             
             for node in nodes:#remember we have seen that node
-                node_list.append(node)
+                node_list.setdefault(node,{"occurrences":0,attribute:[]})
+                node_list[node]["occurrences"]+=1
+                node_list[node][attribute]+=str(row[attribute]).replace("\\,","_").split(",")
+
                 
             for node1,node2 in combinations(nodes,2): #pour chaque paire d'auteurs possible dans la liste
                 collab_list.append(frozenset((node1,node2))) #on ajoute une collaboration. 
@@ -53,10 +65,10 @@ def co_occurence_network(request,column,threshold=1,threshold_max_in_col=10):
     
     #We count how many times each node appears:
     nodes=[]
-    occurences=node_list
-    for n,occ in dict(collections.Counter(occurences)).items(): #collections.Counter count occurences by item
-        if occ>threshold: #we filter out singleton to keep important actors
-            nodes.append((n,{"occurrences":occ})) #we store the result in a format convenient for networkx
+    for n,properties in node_list.items(): #collections.Counter count occurences by item
+        if properties["occurrences"]>threshold: #we filter out singleton to keep important actors
+            most_common_attribute = max(set(properties[attribute]), key = properties[attribute].count)
+            nodes.append((n,{"occurrences":properties["occurrences"],attribute:most_common_attribute})) #we store the result in a format convenient for networkx
     
     #We count how many times each link appears:
     edges=[]
