@@ -24,7 +24,8 @@ def get_all_elements(request_core,page_size=1000):
         df_temp =pd.read_csv(io.StringIO(response.text),sep=",")
 
         #On ajoute les réponses les plus récentes à celles que l'on a déjà
-        df_complet=df_complet.append(df_temp,ignore_index=True)
+        #df_complet=df_complet.append(df_temp,ignore_index=True)
+        df_complet = pd.concat([df_complet, df_temp], ignore_index=True)
         print("Éléments récupérés : ",len(df_complet))
     
     return df_complet #la fonction renvoie le tableau complet
